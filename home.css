@@ -1,6 +1,7 @@
 html, body {
   height: 100%;
   width: 100%;
+  margin: 0;
 }
 
 .name{
@@ -34,6 +35,21 @@ html, body {
   size: 30px;
   align-items: left;
   align-self: left;
+}
+
+.donate{
+  border-style: hidden;
+  background-color: transparent;
+  padding: 7px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 4px 3px 0 rgba(0,0,0,0.2);
+
+}
+
+.donate:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .logospace{
@@ -195,7 +211,49 @@ li{
 }
 .signUp:hover {
   background-color:#002ead27;
-  transition: 0.7s;
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.sponsorSignUp{
+  color:rgb(255, 255, 255);
+  background-color:#000000;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding:10px;
+  border-radius: 1px;
+  text-align: left;
+  margin:0px;
+  font-size: 15px;
+  align-self: center;
+  font-family: "Montserrat";
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  border-top:0px;
+}
+
+.sponsorSignUp:hover {
+  background-color:#00000027;
+  transition: 0.3s;
+  color: black;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0.064);
+
+}
+
+.signUp:active{
+  transform: translateY(4px);
+}
+
+.sponsorSignUp:active {
+  transform: translateY(2px);
+}
+
+.donate:active {
+  transform: translateY(4px);
 }
 
 .webinar{
