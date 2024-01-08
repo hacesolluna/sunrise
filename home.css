@@ -76,7 +76,6 @@ html, body {
 /* Style the collapsible content. Note: hidden by default */
 .viewcontent {
   padding: 0 18px;
-  display: none;
   overflow: hidden;
 }
 
