@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: "Montserrat";
+  }
+
+.title {
+    padding: 20px;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.jRusso {
+    font-family: "Montserrat";
+    padding: 20px;
+}
+
+.jSanders {
+        font-family: "Montserrat";
+        padding: 20px;
+}
+
+.sSanders {
+    font-family: "Montserrat";
+    padding: 20px;
+}
+
+.vMoiso {
+    font-family: "Montserrat";
+    padding: 20px;
+}

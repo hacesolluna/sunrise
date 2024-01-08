@@ -4,6 +4,62 @@ html, body {
   margin: 0;
 }
 
+.righties {
+  display: flex;
+  
+}
+
+.more {
+  background-color: transparent;
+  border-style: hidden;
+  font-family: "Montserrat";
+  font-size: 15px;
+}
+
+.menu {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.dropdown1 {
+  position: relative;
+  margin-top: 10px;
+  background: transparent;
+  font-family: "Montserrat";
+
+}
+.dropdown1-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  font-family: "Montserrat";
+
+}
+.dropdown1:hover .dropdown1-content {
+  display: block;
+  font-family: "Montserrat";
+
+}
+.dropdown1-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+  font-family: "Montserrat";
+
+}
+.dropdown1-content a:hover {
+  color: #FFFFFF;
+  background-color: #bd550077;
+  font-family: "Montserrat";
+  border-radius: 2px;
+  padding: 5px;
+}
+
 .name{
   color:rgb(0, 0, 0);
   padding-top:30px;
