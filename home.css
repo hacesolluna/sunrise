@@ -16,6 +16,8 @@ a {
 .whiteText{
   color: white; 
   font-family: "Montserrat";
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .more {
