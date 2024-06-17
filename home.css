@@ -4,9 +4,121 @@ html, body {
   margin: 0;
 }
 
-/* round1 */
+/* <Heading> */
+.all{
+  background-image: url('back2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
 
+.dropdown{
+  color:rgb(0, 0, 0);
+  /* background-color:rgba(0, 68, 255, 0.367); */
+  padding:20px;
+  border-radius: 1px;
+  text-align: right;
+  margin:0%;
+  font-size: 15px;
+  font-family: "Poppins";
+  letter-spacing: 5px;
+  /* background-image: url("bluehint.jpeg"); */
+}
 
+.logo{
+  border-radius: 50%;
+  size: 30px;
+  align-items: left;
+  align-self: left;
+}
+
+.donate{
+  border-style: hidden;
+  background-color: rgba(255, 0, 0, 0.61);
+  padding: 7px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: bold;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 4px 3px 0 rgba(0,0,0,0.2);
+  color: white;
+  border-radius: 5px;
+}
+
+.donate:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.logospace{
+  place-items: left;
+}
+
+.hook{
+  color:rgb(0, 0, 0);
+  padding:50px;
+  border-radius: 1px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Poppins";
+  letter-spacing: 2px;
+
+  /* background-image: url('back2.jpeg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+
+}
+
+.name{
+  color:rgb(0, 0, 0);
+  padding-top:30px;
+  padding-bottom: 20px;
+  /* left: 0;
+  position: absolute; */
+  text-align: center;
+  margin:0%;
+  font-size: 80px;
+  font-family: "Poppins";
+  letter-spacing: 1px;  
+}
+
+.yay{
+  margin-top: 10px;
+  padding-bottom: 0px;
+  font-size: 30px;
+}
+
+.signUp{
+  color:rgb(255, 255, 255);
+  background-color:#000000;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  padding:20px;
+  border-radius: 1px;
+  text-align: left;
+  margin:5px;
+  font-size: 25px;
+  align-self: center;
+  font-family: "Poppins";
+  word-spacing: 3px;
+  letter-spacing: 2px;
+  margin-top: 0px;
+  border-top:0px;
+  text-decoration: none;
+}
+
+.whiteText{
+  color: rgb(255, 255, 255); 
+  font-family: "Poppins";
+  padding-left: 5px;
+  padding-right: 5px;
+  font-size: 13px;
+  .hover {
+    color: black;
+  }
+}
+
+/* <round1> */
 .navbar {
   list-style-type: none;
   margin: 0;
@@ -75,27 +187,27 @@ html, body {
 
 .title {
   padding: 20px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   text-align: center;
 }
 
 .jRusso {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   padding: 20px;
 }
 
 .jSanders {
-      font-family: "Montserrat";
+      font-family: "Poppins";
       padding: 20px;
 }
 
 .bio {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   padding: 20px;
 }
 
 .vMoiso {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   padding: 20px;
 }
 
@@ -109,21 +221,10 @@ a {
   text-decoration: none;
 }
 
-.whiteText{
-  color: rgb(255, 255, 255); 
-  font-family: "Montserrat";
-  padding-left: 5px;
-  padding-right: 5px;
-  font-size: 13px;
-  .hover {
-    color: black;
-  }
-}
-
 .more {
   background-color: transparent;
   border-style: hidden;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-size: 15px;
 }
 
@@ -138,7 +239,7 @@ a {
   position: relative;
   margin-top: 10px;
   background: transparent;
-  font-family: "Montserrat";
+  font-family: "Poppins";
 
 }
 .dropdown1-content {
@@ -147,12 +248,12 @@ a {
   width: 100%;
   overflow: auto;
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
-  font-family: "Montserrat";
+  font-family: "Poppins";
 
 }
 .dropdown1:hover .dropdown1-content {
   display: block;
-  font-family: "Montserrat";
+  font-family: "Poppins";
 
 }
 .dropdown1-content a {
@@ -160,13 +261,13 @@ a {
   color: #000000;
   padding: 5px;
   text-decoration: none;
-  font-family: "Montserrat";
+  font-family: "Poppins";
 
 }
 .dropdown1-content a:hover {
   color: #FFFFFF;
   background-color: #bd550077;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   border-radius: 2px;
   padding: 5px;
 }
@@ -180,48 +281,8 @@ a {
   text-align: center;
   margin:0%;
   font-size: 80px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   letter-spacing: 1px;  
-}
-
-.dropdown{
-  color:rgb(0, 0, 0);
-  /* background-color:rgba(0, 68, 255, 0.367); */
-  padding:20px;
-  border-radius: 1px;
-  text-align: right;
-  margin:0%;
-  font-size: 15px;
-  font-family: "Montserrat";
-  letter-spacing: 5px;
-  /* background-image: url("bluehint.jpeg"); */
-}
-
-.logo{
-  border-radius: 50%;
-  size: 30px;
-  align-items: left;
-  align-self: left;
-}
-
-.donate{
-  border-style: hidden;
-  background-color: rgba(255, 0, 0, 0.61);
-  padding: 7px;
-  font-family: Montserrat;
-  font-size: 20px;
-  font-weight: bold;
-  box-shadow: 0 5px 5px 0 rgba(0,0,0,0.2), 0 4px 3px 0 rgba(0,0,0,0.2);
-  color: white;
-  border-radius: 5px;
-}
-
-.donate:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.logospace{
-  place-items: left;
 }
 
 /* collapsible */
@@ -235,7 +296,7 @@ a {
   text-align: left;
   outline: none;
   font-size: 20px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   letter-spacing: 5px;
 
 }
@@ -252,18 +313,13 @@ a {
   border-radius: 1px;
   text-align: center;
   font-size: 30px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   letter-spacing: 2px;
 
   /* background-image: url('back2.jpeg');
   background-repeat: no-repeat;
   background-size: 100% 100%; */
 
-}
-.all{
-  background-image: url('back2.jpeg');
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
 }
 
 .firstQ{
@@ -285,34 +341,6 @@ li{
   margin-bottom: 8px;
 }
 
-.yay{
-  margin-top: 10px;
-  padding-bottom: 0px;
-  font-size: 30px;
-}
-
-.signUp{
-  color:rgb(255, 255, 255);
-  background-color:#000000;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding:20px;
-  border-radius: 1px;
-  text-align: left;
-  margin:5px;
-  font-size: 25px;
-  align-self: center;
-  font-family: "Montserrat";
-  word-spacing: 3px;
-  letter-spacing: 2px;
-  margin-top: 0px;
-  border-top:0px;
-  text-decoration: none;
-}
-
 .prizes{
   color:rgb(0, 0, 0);
   background-color:rgba(255, 255, 255, 0.413);
@@ -323,7 +351,7 @@ li{
   text-align: left;
   margin:0%;
   font-size: 15px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   border-width: .5px;
   border-color: #000000;
   display: flex;
@@ -351,7 +379,7 @@ li{
   text-align: left;
   margin:0%;
   font-size: 15px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   border-width: 0.5px;
   border-color: #000000;
   /* background-image: url('sunset1.png'); */
@@ -372,7 +400,7 @@ li{
   text-align: left;
   margin:0%;
   font-size: 15px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   
 
 
@@ -397,7 +425,7 @@ li{
   margin:0px;
   font-size: 15px;
   align-self: center;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   word-spacing: 3px;
   letter-spacing: 2px;
   margin-top: 0px;
@@ -432,7 +460,7 @@ li{
   text-align: left;
   margin:0%;
   font-size: 15px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   border-width: 0.5px;
   border-color: #000000;
 }
@@ -586,7 +614,7 @@ li{
   border-radius: 1px;
   text-align: center;
   font-size: 15px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   border-width: .5px;
   border-color: #000000;
   float: center;
@@ -603,7 +631,7 @@ li{
   text-align: left;
   margin:0%;
   font-size: 15px;
-  font-family: "Montserrat";
+  font-family: "Poppins";
   text-align: center;
   border-width: .5px;
   border-color: #000000;
