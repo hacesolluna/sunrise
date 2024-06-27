@@ -4,10 +4,26 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
   <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -90,8 +106,6 @@
                     Story</a>
                 </li>
               </ul>
-              <div class="py-1">
-              </div>
             </div>
           </li>
           <li>
@@ -117,8 +131,6 @@
                     Us</a>
                 </li>
               </ul>
-              <div class="py-1">
-              </div>
             </div>
           </li>
           <li>
@@ -131,54 +143,108 @@
     </div>
   </nav>
 
-  <!-- Put the hero section/the top-most section here (Cindy)-->  
+  <!-- Put the hero section/the top-most section here (Cindy)-->
 
   <!-- Hero section -->
-  <div class="relative h-screen bg-cover bg-center" style="background-image: url('blueaudience.jpg');">
+  <div class="relative h-[88vh] bg-cover bg-center mx-auto" style="background-image: url('blueaudience.jpg');">
     <div class="absolute inset-0 bg-black opacity-25"></div>
-    <div class="absolute bottom-1/3 left-10">
+    <div class="absolute bottom-1/2 left-10 -mb-36">
       <div class="text-left">
-        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight" style="color: #FFD001;">FOSTERING</span>
-        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight" style="color: #FFF9D2;">ENTREPRENEURSHIP</span>
-        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight" style="color: #FFD001;">IN TOMORROW'S LEADERS</span>
+        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+          style="color: #FFD001;">FOSTERING</span>
+        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+          style="color: #FFF9D2;">ENTREPRENEURSHIP</span>
+        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight" style="color: #FFD001;">IN
+          TOMORROW'S LEADERS</span>
+      </div>
+      <div class="mt-10">
+        <a href="1round.html"
+          class="text-center inline-block bg-orange-400 text-white font-semibold py-4 px-8 rounded-xl hover:bg-orange-500 text-xl">
+          JOIN THE COMPETITITION
+        </a>
       </div>
     </div>
   </div>
 
-  <!-- Content section -->
-  <div class="max-w-screen-xl mx-auto py-8 px-4 sm:px-6 lg:px-8">
-    <!-- Your content here -->
-  </div>
-
-
-  <div class="max-w-screen-xl mx-auto p-4 grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
-    <div>
-      <svg class="w-10 h-10 mx-auto mb-3 mt-0 text-gray-400 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
-        <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
+  <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center py-10">
+    <div class="mb-8 md:mb-0 md:w-1/2">
+      <svg class="w-10 h-10 mx-auto mb-6 -mt-4 text-gray-400 dark:text-gray-600" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+        <path
+          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
       </svg>
-      <blockquote class="bg-white font-extrabold p-4">
-        <p class="text-justify text-blue-700 dark:text-blue-400 leading-relaxed text-xl md:text-3xl tracking-wide">For a <span class="text-orange-500">high school student</span> to be able to come up and get that same practice on how to <span class="text-orange-500">present an idea</span> is such a great opportunity.</p>
+      <blockquote class="bg-white font-extrabold px-4">
+        <p class="text-justify text-blue-700 dark:text-blue-400 leading-relaxed text-xl md:text-3xl tracking-wide">For a
+          <span class="text-orange-500">high school student</span> to be able to come up and get that same practice on
+          how to <span class="text-orange-500">present an idea</span> is such a great opportunity.
+        </p>
         <br>
-        <p class="text-justify text-blue-700 dark:text-blue-400 leading-relaxed text-xl md:text-3xl tracking-wide">It is so critical that we help our youth understand that they are a <span class="text-orange-500">vital part of our society.</span></p>
+        <p class="text-justify text-blue-700 dark:text-blue-400 leading-relaxed text-xl md:text-3xl tracking-wide">It is
+          so critical that we help our youth understand that they are a <span class="text-orange-500">vital part of our
+            society.</span></p>
         <br>
-        <p class="mt-4 text-lg md:text-2xl text-justify text-blue-700 dark:text-blue-400 tracking-wide">Farrah N. Khan, Mayor of Irvine</p>
+        <p class="mt-4 text-lg md:text-2xl text-justify text-blue-700 dark:text-blue-400 tracking-wide">Farrah N. Khan,
+          Mayor of Irvine</p>
       </blockquote>
     </div>
-    <div>
-      <img src="mayorClap.JPG" alt="Mayor Khan" class="w-full h-auto max-w-sm mx-auto mb-10 object-cover" />
+    <div class="md:w-1/2 flex justify-center">
+      <img src="mayorClap.JPG" alt="Mayor Khan" class="w-full h-auto max-w-sm mx-auto object-cover p-8 rounded" />
+    </div>
+  </div>
+  <!-- Put Our Mission Section Here (Radin) -->
+
+  <div class="bg-[#030081]">
+    <div class="text-white px-16 py-10 flex flex-col items-center md:flex-row md:justify-between">
+      <div class="sm:max-w-lg md:max-w-sm mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4 text-center">OUR MISSION</h2>
+        <p class="mb-4">
+          As a 501c3 tax exempt nonprofit organization, our vision is to debunk the myth that entrepreneurs are
+          exclusively tech gurus and to make top-notch entrepreneurial education and networking opportunities accessible
+          to all Californian HS students for free.
+        </p>
+        <a href="#"
+          class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500">
+          SUPPORT US
+        </a>
+      </div>
+      <div>
+        <img id="gallery-image" src="Rectangle 16.png" alt="Group photo" class="rounded shadow-xl fade w-96">
+      </div>
     </div>
   </div>
 
-  <!-- Put Our Mission Section Here (Radin) -->
-  <div class="bg-blue-700">
-    <div class="max-w-screen-xl flex space-x-4 items-center justify-between mx-auto p-4">
-      <p>Radin's Our Mission Section</p>
-    </div>
-  </div>
+  <script>
+    // Array of image sources
+    const images = [
+      'Rectangle 16.png',
+      'blueaudience.jpg',
+    ];
+
+    // Function to change the image
+    function changeImage() {
+      const imgElement = document.getElementById('gallery-image');
+      let currentIndex = images.indexOf(imgElement.getAttribute('data-src'));
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.classList.remove('fade');
+      void imgElement.offsetWidth; // Trigger reflow
+      imgElement.src = images[currentIndex];
+      imgElement.setAttribute('data-src', images[currentIndex]);
+      imgElement.classList.add('fade');
+    }
+
+    // Set initial data-src attribute
+    document.getElementById('gallery-image').setAttribute('data-src', 'Rectangle 16.png');
+
+    // Change image every 3 seconds
+    setInterval(changeImage, 5000);
+  </script>
 
   <!-- Community Partners -->
-  <div class="max-w-screen-xl flex space-x-4 items-center justify-between mx-auto p-4">
-    <p class="text-center text-2xl text-blue-700 text-bold dark:text-blue-400 tracking-wide">Community Partners</p>
+  <div class="max-w-screen-xl flex space-x-4 items-center justify-center mx-auto p-4">
+    <h2 class="text-3xl font-bold mb-4 text-center flex justify-center text-blue-700">Community Partners</h2>
+  </div>
+  <div class="text center">
+    <img src="images/chapmanLogo.png" alt="Chapman University" class="ml-4" />
   </div>
 
   <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js">
