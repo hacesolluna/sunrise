@@ -1,118 +1,169 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="home.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
-    </head>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#navbar").load("navbar.html"); 
+  });
+  </script>
+</head>
+
 <body>
-<div class="all">
-<div class = "dropdown">
-    <a class="logospace">
-        <img class="logo" src="sunriseBlueLogo.png" width="100" 
-        height="100" align="left" position:relative href="index.html">
-        <nav>
-                    <a href="prizes.html" class="whiteText">Prizes</a>
-                    <a href="1round.html" class="whiteText">1st Round</a>
-                    <a href="2round.html" class="whiteText">Summit</a>
-                    <a href="curriculum.html" class="whiteText">Programs</a>
-                    <a href="bio.html" class="whiteText">Mentors/Speakers/Judges</a>
-                    <a href="ourTeam.html" class="whiteText">Our Team</a>
-                    <a href="story.html" class="whiteText">Our Story</a>
-                    <a href="ourSponsors.html" class="whiteText">Sponsors</a>
-                    <a href="sponsorTier.html" class="whiteText">Sponsor Us</a>
-                    <a href="tailwind.html">Test</a>
-        </nav>  
-    </a>
-</div>
-<div class="hook">
-        <p class="name">Sunrise Venture Pitch Competition</p>
+  <div id="navbar"></div>
+  <!-- Put the hero section/the top-most section here (Cindy)-->
 
-    <h6 class="yay">California-wide Pitch Competition for High School Students </h6>
-    <a href="2round.html" class="signUp">2024 Summit Info</a>
-    <a href="https://drive.google.com/file/d/1XlFBAnNXaRZVZXScchsHd3Ol-yvOg1zO/view">
-      <h2 style="color: black; font-size: 20px; padding-top:50px;">Supported by Mayor Khan of Irvine</h2>
-    </a>
-  </div>
-</div>
-
-<div class="format">
-
-  <h2>&#10024; As a 501c3 tax exempt nonprofit organization, our vision is to debunk the myth that entrepreneurs are exclusively tech gurus and to make top-notch entrepreneurial education as well as networking opportunities accessible to all Californian HS students for free &#10024;</h2>
-  <br>
-  <!-- <h1>Summit ToDo</h1>
-  <ul>
-    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrnWHCztDvm7S8uLhvtPwpS8rXpqZ6fulxkS7l20EtFAdIjA/viewform?usp=sf_link">
-      Summit RSVP
-    </a></li>
-    <li><a href="https://docs.google.com/document/d/1AoWgO0SmRRBxzSzZuGRgqTNLmxAMd_fq/edit?usp=sharing&ouid=104426211705686364293&rtpof=true&sd=true">
-      Media release/waiver form
-    </a></li>
-  </ul> -->
-
-  <h1>Testimony</h1>
-  <p>"My partner Serena and I learned how pitches work. LIke what to include in 90 second pitch or 150 second one. We really appreciated the speaking sessions which taught us a lot about market research, IP, etc. Another remarkable thing was that it helped improve your speaking and presenting skills a lot. "</p>
-  <p>-Quennie</p>
-  <br>
-  <p>"The hardest thing for us was to figure out the pain point of our customers in the beginning. We want our products to really help people. After doing some research, we finally found some intriguing points. Personally, my favorite part of the program was mentorship. This gave us the stage to talk with many entrepreneurs and get their valuable feedback. Of course, the final pitch summit was also a highlight which gave us a very special experience."</p>
-  <p>-Serena</p>
-  <br>
-  <p>"Public speaking is not my strongest trait, but preparing for this competition improved my speaking, a lot. This Sunrise Venture competition was my very first entrepreneurial experience. As a person, I feel more confident speaking more confidently. As an entrepreneur, I know how to attract people to my ideas better. My favorite part of the sunrise venture program was being at the final pitch summit. It was a great experience! I got to talk to other contestants and get to know them and their ideas. I also got to meet the judges in person."</p>
-  <p>-Warren</p>
-  <br>
-
-<!-- 
-Serena:
-The hardest thing for us was to figure out the pain point of our customers in the beginning. We want our products to really help people. After doing some research, we finally found some intriguing points. 
-
-Personally, my favorite part of the program was mentorship. This gave us the stage to talk with many entrepreneurs and get their valuable feedback. Of course, the final pitch summit was also a highlight which gave us a very special experience. 
-
-Warren: Public speaking is not my strongest trait, but preparing for this competition improved my speaking, a lot. This Sunrise Venture competition was my very first entrepreneurial experience.
-
-As a person, I feel more confident speaking more confidently. As an entrepreneur, I know how to attract people to my ideas better. 
-
-My favorite part of the sunrise venture program was being at the final pitch summit. It was a great experience! I got to talk to other contestants and get to know them and their ideas. I also got to meet the judges in person. 
- -->
-
-  <h1>Resources</h1>
-  <ul>
-    <li><a href="https://us06web.zoom.us/j/81695595548?pwd=WobOJ4ltbeGwQERbbbuaWTADEmRILJ.1">
-      Zoom Link for Curriculum Sessions</a></li>
-    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSehBYygbXtJLlunhIf-p8lQ9OCvmcBYByZ3yPxmtn2wIIn7Xg/viewform?usp=send_form">
-      Mentorship Signup Form
-    </a></li>
-    <li><a href="https://www.youtube.com/watch?v=rbI7IKYmzxk"> 
-      Pitching Resource
-    </a></li>
-  </ul>
-  <h2>Curriculum Session Recordings:</h2>
-    <ul>
-      <li><a href="https://us06web.zoom.us/rec/play/ZydqJs4293iKlpbWJlnQB9W104sN2HWsbo3MojtoEKKmFc3pdHdrhF1zGKqp706-pOdgAPzKmGz6XPYc.KZytLcLGN99KBPWg?canPlayFromShare=true&from=my_recording&startTime=1707182615000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FultWAXYtXVkbUAHobAAAB3JmzJ3ntNPwCFg23H1pGciL0vf7kub4Wtcy0ZqRIiro.BSkyn4KDbgy9407u%3FstartTime%3D1707182615000%2520Passcode%3A%2520vf%2Bk6sCR">
-        2/5 David Ochi</a></li>
-      <li><a href="https://us06web.zoom.us/rec/share/kvwfGknCvQ1pVIgCAee-hW3wu0UWRGap1RBTLP2NBz_SeBxSrOMcA0sxUieVqfeC.W0tQLDJyMxvZJaY1">
-        2/12 David Ochi</a></li> 
-      <li><a href="https://us06web.zoom.us/rec/play/YjZ7RzlAB65VJ9Q6iToFrTCEc9teQHL3FdAQ_qRlf8BDRQLZ-Dt-k5SSH4EmUjD-LF5RLD6skum_gu6l.CZp6LZh2T7nP6EMA?canPlayFromShare=true&from=my_recording&startTime=1709600776000&componentName=rec-play&originRequestUrl=https%3A%2F%2Fus06web.zoom.us%2Frec%2Fshare%2FmAT6ejlf7ZlHYY4eNayzOw1AkCHKOETgLVOR0mKmafFDlsMGZ61qbNwg3wxDtdmd.5KRlTjWLOAVUsr4i%3FstartTime%3D1709600776000%2520Passcode%3A%2520%403v%24eK%40u">
-        3/4 Shaun Sanders</a></li>  
-      <li><a href="https://us06web.zoom.us/rec/share/lruEEn46bhEoDepvzYddtXCP6MaZy9h3Av94_hMQpN-moGeBbKpOCxtCFolQaLNb.Z-AYgKnP_ktd4E9R?startTime=1710806779000%20Passcode:%20=Zp=z3sb">
-        3/18 Justin Sanders</a></li>   
-    </ul> 
-</div>
-
-<div class="contact">
-    <h1>Connect with Us</h1>
-    <div class="thing">
-        <a href="https://www.instagram.com/sunrise.venture/">
-            <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: rgba(0, 0, 0, 0.563)"></i>
-        </a> 
-        <a href="mailto:sunrise.venture.pitch@gmail.com">
-            <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: rgba(0, 0, 0, 0.563)"></i>
+  <!-- Hero section -->
+  <div class="relative h-[88vh] bg-cover bg-center mx-auto" style="background-image: url('blueaudience.jpg');">
+    <div class="absolute inset-0 bg-black opacity-25"></div>
+    <div class="absolute bottom-1/3 left-10 -mb-36">
+      <div class="text-left">
+        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+          style="color: #FFD001;">FOSTERING</span>
+        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight"
+          style="color: #FFF9D2;">ENTREPRENEURSHIP</span>
+        <span class="block text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight" style="color: #FFD001;">IN
+          TOMORROW'S LEADERS</span>
+      </div>
+      <div class="mt-10">
+        <a href="1round.html" class="text-center inline-block bg-orange-400 text-white font-semibold py-4 px-8 rounded-xl hover:bg-orange-500 text-xl">
+          JOIN THE COMPETITITION
         </a>
-        <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
-            <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: rgba(0, 0, 0, 0.563)"></i>
-        </a>
+      </div>
     </div>
-</div>
+  </div>
+
+  <div class="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row items-center justify-center py-10">
+    <div class="mb-8 md:mb-0 md:w-1/2">
+      <svg class="w-10 h-10 mx-auto mb-6 -mt-4 text-gray-400 dark:text-gray-600" aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
+        <path
+          d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
+      </svg>
+      <blockquote class="bg-white font-extrabold px-4">
+        <p class="text-justify text-blue-700 dark:text-blue-400 leading-relaxed text-xl md:text-3xl">FOR A
+          <span class="text-orange-500">HIGH SCHOOL STUDENT</span> TO BE ABLE TO COME UP AND GET THAT SAME PRACTICE ON HOW TO <span class="text-orange-500">PRESENT AN IDEA</span> IS SUCH A GREAT OPPORTUNITY
+        </p>
+        <br>
+        <p class="text-justify text-blue-700 dark:text-blue-400 leading-relaxed text-xl md:text-3xl">IT IS SO CRITICAL THAT WE HELP OUR YOUTH UNDERSTAND THAT THEY ARE A <span class="text-orange-500">VITAL PART OF OUR SOCIETY.</span></p>
+        <br>
+        <p class="mt-4 text-lg md:text-2xl text-justify text-blue-700 dark:text-blue-400 tracking-wide">Farrah N. Khan,
+          Mayor of Irvine</p>
+      </blockquote>
+    </div>
+    <div class="md:w-1/2 flex justify-center">
+      <img src="mayorClap.JPG" alt="Mayor Khan" class="w-full h-auto max-w-sm mx-auto object-cover p-8 rounded" />
+    </div>
+  </div>
+  <!-- Put Our Mission Section Here (Radin) -->
+
+  <div class="bg-[#030081]">
+    <div class="text-white px-16 py-10 flex flex-col items-center md:flex-row md:justify-between">
+      <div class="sm:max-w-lg md:max-w-sm mb-8 md:mb-0">
+        <h2 class="text-3xl font-bold mb-4 text-center">OUR MISSION</h2>
+        <p class="mb-4">
+          As a 501c3 tax exempt nonprofit organization, our vision is to debunk the myth that entrepreneurs are
+          exclusively tech gurus and to make top-notch entrepreneurial education and networking opportunities accessible
+          to all Californian HS students for free.
+        </p>
+        <a href="#"
+          class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500">
+          SUPPORT US
+        </a>
+      </div>
+      <div>
+        <img id="gallery-image" src="prize.png" alt="Group photo" class="rounded shadow-xl fade w-96">
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Array of image sources
+    const images = [
+      'prize.png',
+      'blueaudience.jpg',
+    ];
+
+    // Function to change the image
+    function changeImage() {
+      const imgElement = document.getElementById('gallery-image');
+      let currentIndex = images.indexOf(imgElement.getAttribute('data-src'));
+      currentIndex = (currentIndex + 1) % images.length;
+      imgElement.classList.remove('fade');
+      void imgElement.offsetWidth; // Trigger reflow
+      imgElement.src = images[currentIndex];
+      imgElement.setAttribute('data-src', images[currentIndex]);
+      imgElement.classList.add('fade');
+    }
+
+    // Set initial data-src attribute
+    document.getElementById('gallery-image').setAttribute('data-src', 'prize.png');
+
+    // Change image every 3 seconds
+    setInterval(changeImage, 5000);
+  </script>
+
+  <!--Bulletin Board-->
+  <div class="max-w-screen-xl flex space-x-4 items-center justify-center mx-auto p-4">
+    <h2 class="text-3xl font-bold mb-4 text-center flex justify-center text-blue-700">Articles</h2>
+    <li>Join The Team: Life as a Sunrise Venture Board Member</li>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 justify-center p-4">
+    <img src="chapmanLogo.png" alt="Chapman University" class="mx-auto" width="50%"/>
+    <img src="mayor.JPG" alt="Mayor Khan" class="mx-auto" width="50%"/>
+    <img src="sponsor2.png" alt="Master Key IP" class="mx-auto" width="50%"/>
+    <img src="sponsor3.jpg" alt="College Ed" class="mx-auto" width="50%"/>
+    <img src="ocsc.PNG" alt="Orange County Startup Council" class="mx-auto" width="50%"/>
+    <img src="ventureCraftLogo.png" alt="VentureCraft" class="mx-auto" width="75%"/>
+    <img src="varsityDrivingSchool.jpeg" alt="Varsity Driving School" class="mx-auto" width="75%"/>
+    <img src="caterLogo.PNG" alt="Lin Bakery" class="mx-auto" width="50%"/>
+    <img src="visLogo.jpeg" alt="Vis Aspire Inc" class="mx-auto" width="50%"/>
+    <img src="yealogo.png" alt="Yea Today" class="mx-auto" width="50%"/>
+  </div>
+
+  <!-- Community Partners -->
+  <div class="max-w-screen-xl flex space-x-4 items-center justify-center mx-auto p-4">
+    <h2 class="text-3xl font-bold mb-4 text-center flex justify-center text-blue-700">COMMUNITY PARTNERS</h2>
+  </div>
+  <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 justify-center p-4">
+    <img src="chapmanLogo.png" alt="Chapman University" class="mx-auto" width="50%"/>
+    <img src="mayor.JPG" alt="Mayor Khan" class="mx-auto" width="50%"/>
+    <img src="sponsor2.png" alt="Master Key IP" class="mx-auto" width="50%"/>
+    <img src="sponsor3.jpg" alt="College Ed" class="mx-auto" width="50%"/>
+    <img src="ocsc.PNG" alt="Orange County Startup Council" class="mx-auto" width="50%"/>
+    <img src="ventureCraftLogo.png" alt="VentureCraft" class="mx-auto" width="75%"/>
+    <img src="varsityDrivingSchool.jpeg" alt="Varsity Driving School" class="mx-auto" width="75%"/>
+    <img src="caterLogo.PNG" alt="Lin Bakery" class="mx-auto" width="50%"/>
+    <img src="visLogo.jpeg" alt="Vis Aspire Inc" class="mx-auto" width="50%"/>
+    <img src="yealogo.png" alt="Yea Today" class="mx-auto" width="50%"/>
+  </div>
+
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js">
+  </script>
+
 </body>
 
 </html>
