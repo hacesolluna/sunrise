@@ -1,73 +1,229 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="home.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
-    </head>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
 <body>
-    <div class="all">
-        <div class = "dropdown">
-            <a class="logospace">
-                <img class="logo" src="venturelogo.JPEG" width="100" 
-                height="100" align="left" position:relative>
-                <nav>
-                    <a href="index.html" class="whiteText">Home</a>
-                    <a href="prizes.html" class="whiteText">Prizes</a>
-                    <a href="1round.html" class="whiteText">1st Round</a>
-                    <a href="2round.html" class="whiteText">Summit</a>
-                    <a href="curriculum.html" class="whiteText">Programs</a>
-                    <a href="bio.html" class="whiteText">Mentors/Speakers/Judges</a>
-                    <a href="ourTeam.html" class="whiteText">Our Team</a>
-                    <a href="story.html" class="whiteText">Our Story</a>
-                    <a href="ourSponsors.html" class="whiteText">Sponsors</a>
-                    <a href="sponsorTier.html" class="whiteText">Sponsor Us</a>
-                </nav>            
-        </div>
-        <div class="hook">
-            <p class="name">Our Story</p>
-        </div>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="sunriseBlueLogo.png" class="h-8" alt="Sunrise Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sunrise Venture</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="tailwind.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+              aria-current="page">HOME</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">THE
+              COMPETITION<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar1"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="prizes.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Prizes</a>
+                </li>
+                <li>
+                  <a href="1round.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">1st
+                    Round</a>
+                </li>
+                <li>
+                  <a href="2round.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">The
+                    Summit</a>
+                </li>
+                <li>
+                  <a href="curriculum.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">ABOUT<svg
+                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar2"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="bio.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mentors</a>
+                </li>
+                <li>
+                  <a href="ourTeam.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                    Team</a>
+                </li>
+                <li>
+                  <a href="story.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                    Story</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SUPPORT
+              US<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar3"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="ourSponsors.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                    Sponsors</a>
+                </li>
+                <li>
+                  <a href="sponsorTier.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsor
+                    Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PAST
+              WINNERS</a>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div class="format" width="100%">
-        <div>
-            <h1>Timeline</h1>
-                <p>
-                    <strong>September 2023:</strong> Ellen Wang develops a vision of the Sunrise Venture Pitch Competition.
-                </p>
-                <p>
-                    <strong>September 2023:</strong> Ellen Wang contacts the Irvine mayor Farrah Khan for support of the Sunrise Venture Pitch Competition.
-                </p>
-                <p>
-                    <strong>October 2023:</strong> Mayor Khan provides a 500$ grant for the Sunrise Venture Pitch Competition.
-                </p>
-                <p>
-                    <strong>November 2023:</strong> Ellen Wang creates the free, virtual Entrepreneurship Curriculum and Mentorship Program to make education accessible to all Californian students. The zoom curriculum features 9 different speakers at 10 sessions throughout February, March and April. The mentorship program features 9 entrepreneurs who will give students individualized pitch feedback. These programs connect students with the entrepreneurial community and open their network to meaningful relationships.
-                </p>
-                <p>
-                    <strong>November 2023:</strong> The Sunrise team is recruited. Amador Valley junior Sunny Moon joins as the Chief Technology Officer and Publicist of NorCal, Northwood High junior Maya Iyengar joins as the Director of Outreach, Northwood High freshman Amber Chih joins as the Publicist of SoCal.
-                </p>
-                <p>
-                    <strong>December 2024:</strong> University High junior Shuba Senthilkumar joins the Sunrise team as the Curriculum Coordinator.
-                </p>
-                <p>
-                    <strong>December 2024:</strong> Sunrise Venture obtains various in-kind sponsorships from entrepreneurs, and sponsors include IP Lawyer Justin Sanders and entrepreneur Rudy Chavarria.
-                </p>
-                <p>
-                    <strong>January 2024:</strong> Mayor Khan releases an official letter of support for SVPC*hyperlink.
-                </p>
-                <p>
-                    <strong>February 2024:</strong> 120 students from 19 different high schools across California register for the Sunrise Venture Pitch Competition. Schools include Santa Monica High, Valencia High, Chaparral High, and OSCA.
-                </p>
-                <p>
-                    <strong>February 2024:</strong> The Entrepreneurship Curriculum kicks off with 55 students in the first zoom session, “How to Craft a 90 Second Pitch”. The honored first speaker is David Ochi, the founding Executive Director of UCI ANTrepreneur Center and Executive Director of the Innovation Center at Cal State Dominguez Hills.
-                </p>
-                <p>
-                    <strong>March 2024:</strong> The weekly curriculum + bi-weekly mentorship sessions take place. A total of 20 entrepreneurs, investors, and lawyers act as mentors, speakers, and judges, demonstrating the incredible supportiveness and unity of the OC entrepreneurial community.
-                </p>
-                <p>
-                    <strong>April 2024:</strong> 90-second pitches are submitted and judges score teams’ pitches virtually, selecting top 10 finalists to compete in the second round. The final competition location and date are TBD in May or June.
-                </p>
-        </div>
+  </nav>
+
+  
+  <div>
+    <div class="relative h-[88vh] bg-cover bg-center mx-auto" style="background-image: url('ourStory.png');">
+      <div class="absolute inset-0 bg-black opacity-25"></div>
+      <div class="transparent-blue">
+        <span>OUR STORY</span>
+      </div> 
     </div>
+  </div>
+      
+    <div>
+    <h1 class="text-center text-4xl font-extrabold text-black mt-5">Timeline</h1>
+      <ol class="timeline-container relative border-s border-gray-200 dark:border-gray-700">                  
+          <li class="ms-4">
+              <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">September 2023</time>
+              <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Ellen Wang develops a vision of the Sunrise Venture Pitch Competition.</p>
+            <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Ellen Wang contacts the Irvine mayor Farrah Khan for support of the Sunrise Venture Pitch Competition.</p>
+          </li>
+        <li class="ms-4">
+          <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">October 2023</time>
+              <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Mayor Khan provides a 500$ grant for the Sunrise Venture Pitch Competition.</p>
+          </li>
+          <li class="ms-4">
+              <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+              <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">November 2023</time>
+            <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Ellen Wang creates the free, virtual Entrepreneurship Curriculum and Mentorship Program to make education accessible to all Californian students. The zoom curriculum features 9 different speakers at 10 sessions throughout February, March and April. The mentorship program features 9 entrepreneurs who will give students individualized pitch feedback. These programs connect students with the entrepreneurial community and open their network to meaningful relationships.</p>
+            <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">The Sunrise team is recruited. Amador Valley junior Sunny Moon joins as the Chief Technology Officer and Publicist of NorCal, Northwood High junior Maya Iyengar joins as the Director of Outreach, Northwood High freshman Amber Chih joins as the Publicist of SoCal.</p>
+        <li class="ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">December 2023</time>
+          <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">University High junior Shuba Senthilkumar joins the Sunrise team as the Curriculum Coordinator.</p>
+          <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Sunrise Venture obtains various in-kind sponsorships from entrepreneurs, and sponsors include IP Lawyer Justin Sanders and entrepreneur Rudy Chavarria.</p> 
+        </li>
+        <li class="ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">January 2024</time>
+            <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Mayor Khan releases an official letter of support for SVPC</p>
+        </li>
+        <li class="ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">February 2024</time>
+          <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">120 students from 19 different high schools across California register for the Sunrise Venture Pitch Competition. Schools include Santa Monica High, Valencia High, Chaparral High, and OSCA.</p>
+          <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">The Entrepreneurship Curriculum kicks off with 55 students in the first zoom session, How to Craft a 90 Second Pitch. The honored first speaker is David Ochi, the founding Executive Director of UCI ANTrepreneur Center and Executive Director of the Innovation Center at Cal State Dominguez Hills.</p> 
+        </li>
+        <li class="ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">March 2024</time>
+            <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">The weekly curriculum + bi-weekly mentorship sessions take place. A total of 20 entrepreneurs, investors, and lawyers act as mentors, speakers, and judges, demonstrating the incredible supportiveness and unity of the OC entrepreneurial community.</p>
+        </li>
+        <li class="ms-4">
+            <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+            <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue-500">April 2024</time>
+            <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">90-second pitches are submitted and judges score teams' pitches virtually, selecting top 10 finalists to compete in the second round. The final competition location and date are TBD in May or June.</p>
+        </li>
+      </ol>
+      </div>
+
+  </div>
+
+
+  <footer class="bg-[#030081] text-white px-16 py-10">
+    <h1 class="text-3xl font-bold mb-4 text-center">CONNECT WITH US</h1>
+    <div class="text-center">
+      <a href="https://www.instagram.com/sunrise.venture/">
+        <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: white"></i>
+      </a>
+      <a href="mailto:sunrise.venture.pitch@gmail.com">
+        <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: white"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
+        <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: white"></i>
+      </a>
+    </div>
+  </footer>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
+
+</html>

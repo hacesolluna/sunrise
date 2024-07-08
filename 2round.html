@@ -1,84 +1,236 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="home.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
-    </head>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
 <body>
-    <div class="all">
-        <div class = "dropdown">
-            <a class="logospace">
-                <img class="logo" src="venturelogo.JPEG" width="100" 
-                height="100" align="left" position:relative>
-                <nav>
-                    <a href="index.html" class="whiteText">Home</a>
-                    <a href="prizes.html" class="whiteText">Prizes</a>
-                    <a href="1round.html" class="whiteText">1st Round</a>
-                    <a href="2round.html" class="whiteText">Summit</a>
-                    <a href="curriculum.html" class="whiteText">Programs</a>
-                    <a href="bio.html" class="whiteText">Mentors/Speakers/Judges</a>
-                    <a href="ourTeam.html" class="whiteText">Our Team</a>
-                    <a href="story.html" class="whiteText">Our Story</a>
-                    <a href="ourSponsors.html" class="whiteText">Sponsors</a>
-                    <a href="sponsorTier.html" class="whiteText">Sponsor Us</a>
-                </nav>            
-        </div>
-        <div class="hook">
-            <p class="name">The Pitch Summit</p>
-        </div>
-    </div>
-    <style>
-        .format1 {
-            display: flex;
-            flex-direction: row;
-            font-family: Poppins;
-            justify-content: center;
-        }
-    </style>
-    <div class="format">
-        <h1>Finalist Pitch Summit:</h1>
-        <li>May 25, 2-5 PM</li>
-        <li>UCI ISEB Auditorium 1010</li>
-        <li>419 Physical Sciences Quad, Irvine, CA 92697</li>
-    </div>
-    <div class="format">
-        <h1>Summit ToDo</h1>
-        <ul>
-            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfrnWHCztDvm7S8uLhvtPwpS8rXpqZ6fulxkS7l20EtFAdIjA/viewform?usp=sf_link">
-            Summit RSVP
-            </a></li>
-            <li><a href="https://docs.google.com/document/d/1AoWgO0SmRRBxzSzZuGRgqTNLmxAMd_fq/edit?usp=sharing&ouid=104426211705686364293&rtpof=true&sd=true">
-            Media release/waiver form
-            </a></li>
+  <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+      <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <img src="sunriseBlueLogo.png" class="h-8" alt="Sunrise Logo" />
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sunrise Venture</span>
+      </a>
+      <button data-collapse-toggle="navbar-dropdown" type="button"
+        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        aria-controls="navbar-dropdown" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
+      <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+        <ul
+          class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a href="tailwind.html"
+              class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+              aria-current="page">HOME</a>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">THE
+              COMPETITION<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                fill="none" viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar1"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="prizes.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Prizes</a>
+                </li>
+                <li>
+                  <a href="1round.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">1st
+                    Round</a>
+                </li>
+                <li>
+                  <a href="2round.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">The
+                    Summit</a>
+                </li>
+                <li>
+                  <a href="curriculum.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Curriculum</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink2" data-dropdown-toggle="dropdownNavbar2"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">ABOUT<svg
+                class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar2"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="bio.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Mentors</a>
+                </li>
+                <li>
+                  <a href="ourTeam.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                    Team</a>
+                </li>
+                <li>
+                  <a href="story.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                    Story</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <button id="dropdownNavbarLink3" data-dropdown-toggle="dropdownNavbar3"
+              class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">SUPPORT
+              US<svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 10 6">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="m1 1 4 4 4-4" />
+              </svg></button>
+            <!-- Dropdown menu -->
+            <div id="dropdownNavbar3"
+              class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg dark:bg-gray-700 dark:divide-gray-600">
+              <ul class="py-2 text-sm text-gray-700 dark:text-gray-400" aria-labelledby="dropdownLargeButton">
+                <li>
+                  <a href="ourSponsors.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Our
+                    Sponsors</a>
+                </li>
+                <li>
+                  <a href="sponsorTier.html"
+                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sponsor
+                    Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#"
+              class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">PAST
+              WINNERS</a>
+          </li>
         </ul>
+      </div>
     </div>
+  </nav>
+  <!-- Start Hero Section here -->
+  <div class="relative h-[88vh] bg-cover bg-center mx-auto" style="background-image: url('allFinalists.JPG');">
+    <span
+      class="block bg-[#030081] text-4xl opacity-70 sm:text-5xl md:text-6xl font-extrabold leading-tight text-center"
+      style="color: #FFD001; padding: 35px">2024 SUMMER PITCH SUMMIT</span>
+  </div>
+  
+  <div class="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8" style="padding: 20px">
+    <p class="text-3xl">New Update: &#128483; 2024 Fall Pitch Summit coming soon!</p>
+<!-- old -->
+    <style>
+      .format1 {
+          display: flex;
+          flex-direction: row;
+          font-family: Poppins;
+          justify-content: center;
+          padding-top: 20px;
+      }
+    </style>
+    
     <div class="format1" width="100%">
-        <div style ="margin-top:30px; padding-bottom: 50px">
-            <h1>Summit Flier<h1>
-                <img src="summitFlier.jpeg" width="600px" height="690px" class = "format1">
+      <div style ="margin-top:30px; padding-bottom: 50px">
+              <img src="summitFlier.jpeg" width="600px" height="690px" class = "format1">
+      </div>
+      <div style="margin-left: 100px; margin-top: 30px; padding-bottom: 50px">
+        <div class="format">
+          <h1 class="text-3xl font-bold">Finalist Pitch Summit:</h1>
+          <p>May 25, 2-5 PM</p>
+          <p>UCI ISEB Auditorium 1010</p>
+          <p>419 Physical Sciences Quad, Irvine, CA 92697</p>
         </div>
-        <div style="margin-left: 100px; margin-top: 30px; padding-bottom: 50px">
-            <h1>14 Finalists</h1>
-                <li>Kailey Yeo</li>
-                <li>Zaarya Vaid</li>
-                <li>Lauren Low & Alexis Low</li>
-                <li>Serena Liu & Queenie Xia</li>
-                <li>Courtney Lee & Audrey Brown & Audrey Park</li>
-                <li>Lauren Cho & Mandy Shi </li>
-                <li>Madison Low</li>
-                <li>Aahana Soni</li>
-                <li>Warren Ng</li>
-                <li>Zeynep Arat & Kieran Lee</li>
-                <li>Ishan Junnarkar</li>
-                <li>Sina Emtiaz</li>
-                <li>Omar Latifzada</li>
-                <li>Anna Liu & Hilda Zheng & Emily Lei</li>
+
+        <div class="format">
+          <h1 class="text-3xl font-bold">Summit ToDo</h1>
+          <div style="padding-bottom: 10px; padding-top: 10px">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfrnWHCztDvm7S8uLhvtPwpS8rXpqZ6fulxkS7l20EtFAdIjA/viewform?usp=sf_link"
+            class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500">
+            Summit RSVP
+          </a>
+          </div>
+          <div>
+          <a href="https://docs.google.com/document/d/1AoWgO0SmRRBxzSzZuGRgqTNLmxAMd_fq/edit?usp=sharing&ouid=104426211705686364293&rtpof=true&sd=true"
+            class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500">
+            Media release/waiver form
+          </a>
+          </div>
         </div>
+        <div class="format">
+          <h1 class="text-3xl font-bold"">Finalists</h1>
+              <li>Kailey Yeo</li>
+              <li>Zaarya Vaid</li>
+              <li>Lauren Low & Alexis Low</li>
+              <li>Serena Liu & Queenie Xia</li>
+              <li>Courtney Lee & Audrey Brown & Audrey Park</li>
+              <li>Lauren Cho & Mandy Shi </li>
+              <li>Madison Low</li>
+              <li>Aahana Soni</li>
+              <li>Warren Ng</li>
+              <li>Zeynep Arat & Kieran Lee</li>
+              <li>Ishan Junnarkar</li>
+              <li>Sina Emtiaz</li>
+              <li>Omar Latifzada</li>
+              <li>Anna Liu & Hilda Zheng & Emily Lei</li>
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+  <footer class="bg-[#030081] text-white px-16 py-10">
+    <h1 class="text-3xl font-bold mb-4 text-center">CONNECT WITH US</h1>
+    <div class="text-center">
+      <a href="https://www.instagram.com/sunrise.venture/">
+        <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: white"></i>
+      </a>
+      <a href="mailto:sunrise.venture.pitch@gmail.com">
+        <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: white"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
+        <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: white"></i>
+      </a>
     </div>
-    <div class="format">
-        <h1>Rubric</h1>
-        <img src="summitRubric.png" width="60%" length="40px">
-    </div>
+  </footer>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
+
+</html>
