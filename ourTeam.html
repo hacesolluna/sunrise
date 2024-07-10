@@ -1,79 +1,271 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="home.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
-    </head>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#navbar").load("navbar.html"); 
+  });
+  </script>
+</head>
+
 <body>
-    <div class="all">
-        <div class = "dropdown">
-            <a class="logospace">
-                <img class="logo" src="venturelogo.JPEG" width="100" 
-                height="100" align="left" position:relative>
-                <nav>
-                    <a href="index.html" class="whiteText">Home</a>
-                    <a href="prizes.html" class="whiteText">Prizes</a>
-                    <a href="1round.html" class="whiteText">1st Round</a>
-                    <a href="2round.html" class="whiteText">Summit</a>
-                    <a href="curriculum.html" class="whiteText">Programs</a>
-                    <a href="bio.html" class="whiteText">Mentors/Speakers/Judges</a>
-                    <a href="ourTeam.html" class="whiteText">Our Team</a>
-                    <a href="story.html" class="whiteText">Our Story</a>
-                    <a href="ourSponsors.html" class="whiteText">Sponsors</a>
-                    <a href="sponsorTier.html" class="whiteText">Sponsor Us</a>
-                </nav>            
+  
+  <div id="navbar"></div>
+
+  <!--body-->
+  <div class="relative h-[88vh] bg-cover bg-center mx-auto" style="background-image: url('allFinalists.JPG');">
+    <span
+      class="block bg-[#030081] text-4xl opacity-70 sm:text-5xl md:text-6xl font-extrabold leading-tight text-center"
+      style="color: #FFD001; padding: 35px">OUR TEAM</span>
+  </div>
+
+    <div style="display: flex; justify-content: space-evenly; flex-flow: row wrap; gap: 20px; margin: 30px; align-items: start;">
+    <!-- ellen -->
+    <div id="cardEllen" class="w-60 px-6 py-6  text-center bg-[#FFF9D2] rounded-lg lg:mt-0 xl:px-10">
+      <div class="space-y-4 xl:space-y-6">
+        <img id="removeEllen" class="mx-auto rounded-full h-36 w-36" src="ellenHeadshot.png" alt="author avatar">
+        <div class="space-y-2">
+          <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
+            <h3 id="titleEllen" class="text-[#030081] text-2xl font-black tracking-wide">Ellen Wang</h3>
+            <p id="textEllen" class="text-[#030081]">Founder & President</p>
+            <div class="flex justify-center mt-5 space-x-5">
+              <a id="removeEllen" href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400"><span
+                  class="sr-only">Linkedin</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" class="w-6 h-6 text-gray-400 hover:text-gray-100" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
         </div>
-        <div class="hook">
-            <p class="name">Our Team</p>
-        </div>
+      </div>
+  
+      <button id="newButtonEllen" onclick="toggleTextEllen()" class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500" style="margin-top: 10px">READ MORE</button>
     </div>
-    <div class="format" width="100%">
-        <div class="container1">
-        <h1 class="name1">Ellen Wang</h1>
-            <h2><a href="http://www.linkedin.com/in/ellen-wang2007"><i class="fa fa-linkedin-square" style="font-size:36px; color:rgb(90, 143, 240)"></i></a></h2>
+
+    <!-- Maya -->
+    <div id="cardMaya" class="w-60 px-6 py-6  text-center bg-[#FFF9D2] rounded-lg lg:mt-0 xl:px-10">
+      <div class="space-y-4 xl:space-y-6">
+        <img id="removeMaya" class="mx-auto rounded-full h-36 w-36" src="mayaHeadshot.png" alt="author avatar">
+        <div class="space-y-2">
+          <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
+            <h3 id="titleMaya" class="text-[#030081] text-2xl font-black tracking-wide">Maya Iyengar</h3>
+            <p id="textMaya" class="text-[#030081]">Director of Outreach</p>
+            <div class="flex justify-center mt-5 space-x-5">
+              <a id="removeMaya" href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400"><span
+                  class="sr-only">Linkedin</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" class="w-6 h-6 text-gray-400 hover:text-gray-100" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
         </div>
-            <h2>Founder & President</h2>
-        <div class ="container1">
-            <img style="margin-top: 10px; margin-bottom: 40px;" src="ellenHeadshot.png" width="230" height="230">
-            <p style="padding-left: 20px; font-size: 17px">Ellen Wang is the Founder & President of the CA-wide Sunrise Venture Pitch Competition. As the President of Northwood High&#39s Entrepreneurship Club, she was inspired to expand this pitch competition into a state-wide event. She has garnered a $500 grant from Irvine Mayor Farrah Khan and united the OC startup community&#8211business professors, investors, and entrepreneurs&#8211to create a free online curriculum and mentorship program for high school students. Her vision is to debunk the myth that entrepreneurs have to be <q>silicon valley tech gurus</q> and to make superb entrepreneurial education as well as networking opportunities accessible to all students regardless of economic privilege, because few people can afford $7000 entrepreneurship summer programs.</p>
+      </div>
+  
+      <button id="newButtonMaya" onclick="toggleTextMaya()" class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500" style="margin-top: 10px">READ MORE</button>
+    </div>
+
+    <!--Shuba-->
+    <div id="cardShuba" class="w-60 px-6 py-6  text-center bg-[#FFF9D2] rounded-lg lg:mt-0 xl:px-10">
+      <div class="space-y-4 xl:space-y-6">
+        <img id="removeShuba" class="mx-auto rounded-full h-36 w-36" src="shubaHeadshot.png" alt="author avatar">
+        <div class="space-y-2">
+          <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
+            <h3 id="titleShuba" class="text-[#030081] text-2xl font-black tracking-wide">Shuba Senthilkumar</h3>
+            <p id="textShuba" class="text-[#030081]">Curriculum and Mentorship Coordinator</p>
+            <div class="flex justify-center mt-5 space-x-5">
+              <a id="removeShuba" href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400"><span
+                  class="sr-only">Linkedin</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" class="w-6 h-6 text-gray-400 hover:text-gray-100" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
         </div>
-        <div class = "container1">
-        <h1 class="name1">Maya Iyengar</h1>
-            <h2><a href="https://www.linkedin.com/in/maya-iyengar-58b089261/"><i class="fa fa-linkedin-square" style="font-size:36px; color:rgb(90, 143, 240)"></i></a></h2>
+      </div>
+  
+      <button id="newButtonShuba" onclick="toggleTextShuba()" class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500" style="margin-top: 10px">READ MORE</button>
+    </div>
+
+    <!-- Amber -->
+    <div id="cardAmber" class="w-60 px-6 py-6  text-center bg-[#FFF9D2] rounded-lg lg:mt-0 xl:px-10">
+      <div class="space-y-4 xl:space-y-6">
+        <img id="remove" class="mx-auto rounded-full h-36 w-36" src="amberHeadshot.jpg" alt="author avatar">
+        <div class="space-y-2">
+          <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
+            <h3 id="title" class="text-[#030081] text-2xl font-black tracking-wide">Amber Chih</h3>
+            <p id="textAmber" class="text-[#030081]">Director of Publicity - SoCal</p>
+            <div class="flex justify-center mt-5 space-x-5">
+              <a id="remove" href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400"><span
+                  class="sr-only">Linkedin</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                  viewBox="0 0 448 512" class="w-6 h-6 text-gray-400 hover:text-gray-100" height="1em" width="1em"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                  </path>
+                </svg></a>
+            </div>
+          </div>
         </div>
-            <h2>Director of Outreach</h2>
-        <div class="container1">
-            <img style="margin-top: 10px; margin-bottom: 40px;" src="mayaHeadshot.png" width="230" height="230">
-            <p style="padding-left: 20px; font-size: 17px">Maya Iyengar is the director of outreach for the Sunrise Venture Pitch Competition. She is a junior at Northwood High School in Irvine, California. Maya is very passionate about tackling inequities in education, and joined Sunrise Venture to expand the horizons of career exploration and entrepreneurship education for high school students. Outside of Sunrise Venture, Maya is also a board member of the Entrepreneurship Club, Stock Market Club, and President of the Days for Girls club at her school, showcasing her passion for business and community service. </p>
+      </div>
+  
+      <button id="newButtonAmber" onclick="toggleTextAmber()" class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500" style="margin-top: 10px">READ MORE</button>
+    </div>
+
+    <!-- Sunny -->
+    <div id="cardSunny" class="w-60 px-6 py-6  text-center bg-[#FFF9D2] rounded-lg lg:mt-0 xl:px-10">
+        <div class="space-y-4 xl:space-y-6">
+          <img id="remove" class="mx-auto rounded-full h-36 w-36" src="sunnyHeadshot.png" alt="author avatar">
+          <div class="space-y-2">
+            <div class="flex justify-center items-center flex-col space-y-3 text-lg font-medium leading-6">
+              <h3 id="title" class="text-[#030081] text-2xl font-black tracking-wide">Sunny Moon</h3>
+              <p id="textSunny" class="text-[#030081]">Chief Technology Officer</p>
+              <div class="flex justify-center mt-5 space-x-5">
+                <a id="remove" href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400"><span
+                    class="sr-only">GitHub</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 496 512" class="w-6 h-6 text-gray-400 hover:text-gray-100" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z">
+                    </path>
+                  </svg></a>
+                <a id="remove" href="#" target="_blank" rel="noopener noreferrer" class="inline-block text-gray-400"><span
+                    class="sr-only">Linkedin</span><svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                    viewBox="0 0 448 512" class="w-6 h-6 text-gray-400 hover:text-gray-100" height="1em" width="1em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z">
+                    </path>
+                  </svg></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container1">
-        <h1 class="name1">Shuba Senthilkumar</h1>
-            <h2><a href="https://www.linkedin.com/in/shuba-senthilkumar-3b5990283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="fa fa-linkedin-square" style="font-size:36px; color:rgb(90, 143, 240)"></i></a></h2>
-        </div>
-            <h2>Curriculum and Mentorship Coordinator</h2>
-        <div class="container1">
-            <img style="margin-top: 17px; margin-bottom: 40px;"src="shubaHeadshot.png" width="230" height="230">
-            <p style="padding-left: 20px; font-size: 17px">Shuba Senthilkumar is the Curriculum and Mentorship Coordinator of Sunrise Venture Pitch Competition. Also outside of Sunrise, you can catch her serving her schools ASB, leading various service projects as the president of University High School&#39s Key Club, or interning for startups and nonprofits&#8211 generally fostering a community, locally and regionally. Sunrise Venture Pitch Competition is one of her entrepreneurial nonprofits she focuses on enriching with her contributions. Shuba connects with the seasoned entrepreneurs, investors, and professors of California to invite to the program&#39s weekly speaker sessions and mentorship sessions. She ensures every participant receives clear and cohesive information, accommodating their needs and catering to their wants tirelessly. Her vision is granting everyone equal and inclusive access to the resources, opportunities, and experiences, enabling everyone to rise and shine bright, regardless of any disadvantage they may have.</p>
-        </div>
-        <div class="container1">
-        <h1 class="name1">Amber Chih</h1>
-            <h2><a href="https://www.linkedin.com/in/amber-chih-8993132b9/"><i class="fa fa-linkedin-square" style="font-size:36px; color:rgb(90, 143, 240)"></i></a></h2>
-        </div>
-            <h2>Director of Publicity - SoCal</h2>
-        <div class="container1">
-            <img style="margin-top: 10px; margin-bottom: 40px;" src="amberHeadshot.jpg" width="230" height="230">
-            <p style="padding-left: 20px; font-size: 17px">Amber Chih is the Director of Publicity for the Sunrise Venture Pitch Competition. As a freshman in Northwood High School and the only freshman on the team, she is eager to learn from the incredible opportunity of working on the competition and probably has the highest screen time. She is passionate about youth advocacy, public speaking, and Conan Gray. Outside of SV, she enjoys participating in all things speaking: from speech and debate to youth board meetings to talk shows, she loves to engage with her community.</p>
-        </div>
-        <div class="container1">
-        <h1 class="name1">Sunny Moon</h1>
-            <h2><a href="https://www.linkedin.com/in/seoyeon-m-9a8308241/"><i class="fa fa-linkedin-square" style="font-size:36px; color:rgb(90, 143, 240)"></i></a></h2>
-        </div>
-            <h2>Chief Technology Officer & Director of Publicity - NorCal</h2>
-        <div class="container1">
-            <img style="margin-top: 10px; margin-bottom: 40px;" src="sunnyHeadshot.png" width="230" height="230">
-            <p style="padding-left: 20px; font-size: 17px">Sunny Moon is the Chief Technology Officer and Director of Publicity in Northern California. She is the developer of this website and is very proud of the sunrise team for their ability to bring magic! Outside of Sunrise, Sunny is a junior at Amador Valley High School in the San Francisco Bay Area. She is a passionate STEM nerd and is a Science Olympiad kid! An avid cellist and an orchestra musician playing in San Francisco Symphony Youth Orchestra, she is also passionate about serving her community through music: she leads Tri-Valley Symphonics as the Music Director and her school Music Honor Society as its Founder. She also enjoys learning about history and social issues and dreams to use her technical skills to promote compassion in society. </p>
-        </div>
-        </div>
+    
+        <button id="newButtonSunny" onclick="toggleTextSunny()" class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500" style="margin-top: 10px">READ MORE</button>
+      </div>
+
+      <script>
+
+        //toggel functions for all board members: Ellen, Maya, Shuba, Amber, Sunny
+
+        function toggleTextEllen() {
+          var button = document.getElementById('newButtonEllen');
+          var text = document.getElementById('textEllen');
+
+          if (button.textContent === 'READ MORE') {
+              button.textContent = 'REDUCE';
+              text.textContent = 'Ellen Wang is the Founder & President of the CA-wide Sunrise Venture Pitch Competition. As the President of Northwood High Entrepreneurship Club, she was inspired to expand this pitch competition into a state-wide event. She has garnered a $500 grant from Irvine Mayor Farrah Khan and united the OC startup community business professors, investors, and entrepreneurs to create a free online curriculum and mentorship program for high school students. Her vision is to debunk the myth that entrepreneurs have to be silicon valley tech gurus and to make superb entrepreneurial education as well as networking opportunities accessible to all students regardless of economic privilege, because few people can afford $7000 entrepreneurship summer programs.';
+          } else {
+              button.textContent = 'READ MORE';
+              text.textContent = 'Founder & President';
+          }
+        }
+
+        function toggleTextMaya() {
+            var button = document.getElementById('newButtonMaya');
+            var text = document.getElementById('textMaya');
+            
+            if (button.textContent === 'READ MORE') {
+                button.textContent = 'REDUCE';
+                text.textContent = 'Maya Iyengar is the director of outreach for the Sunrise Venture Pitch Competition. She is a junior at Northwood High School in Irvine, California. Maya is very passionate about tackling inequities in education, and joined Sunrise Venture to expand the horizons of career exploration and entrepreneurship education for high school students. Outside of Sunrise Venture, Maya is also a board member of the Entrepreneurship Club, Stock Market Club, and President of the Days for Girls club at her school, showcasing her passion for business and community service.';
+            } else {
+                button.textContent = 'READ MORE';
+                text.textContent = 'Director of Outreach';
+            }
+        }
+
+        function toggleTextShuba() {
+          var button = document.getElementById('newButtonShuba');
+          var text = document.getElementById('textShuba');
+
+          if (button.textContent === 'READ MORE') {
+              button.textContent = 'REDUCE';
+              text.textContent = 'Shuba Senthilkumar is the Curriculum and Mentorship Coordinator of Sunrise Venture Pitch Competition. Also outside of Sunrise, you can catch her serving her schools ASB, leading various service projects as the president of University High School&#39s Key Club, or interning for startups and nonprofits&#8211 generally fostering a community, locally and regionally. Sunrise Venture Pitch Competition is one of her entrepreneurial nonprofits she focuses on enriching with her contributions. Shuba connects with the seasoned entrepreneurs, investors, and professors of California to invite to the program&#39s weekly speaker sessions and mentorship sessions. She ensures every participant receives clear and cohesive information, accommodating their needs and catering to their wants tirelessly. Her vision is granting everyone equal and inclusive access to the resources, opportunities, and experiences, enabling everyone to rise and shine bright, regardless of any disadvantage they may have.';
+          } else {
+              button.textContent = 'READ MORE';
+              text.textContent = 'Curriculum and Mentorship Coordinator';
+          }
+        }
+
+        function toggleTextAmber() {
+            var button = document.getElementById('newButtonAmber');
+            var text = document.getElementById('textAmber');
+            
+            if (button.textContent === 'READ MORE') {
+                button.textContent = 'REDUCE';
+                text.textContent = 'Amber is the Director of Publicity for the Sunrise Venture Pitch Competition. As a freshman in Northwood High School and the only freshman on the team, she is eager to learn from the incredible opportunity of working on the competition and probably has the highest screen time. She is passionate about youth advocacy, public speaking, and Conan Gray. Outside of SV, she enjoys participating in all things speaking: from speech and debate to youth board meetings to talk shows, she loves to engage with her community.';
+            } else {
+                button.textContent = 'READ MORE';
+                text.textContent = 'Director of Publicity - SoCal';
+            }
+        }
+
+        function toggleTextSunny() {
+            var button = document.getElementById('newButtonSunny');
+            var text = document.getElementById('textSunny');
+            
+            if (button.textContent === 'READ MORE') {
+                button.textContent = 'REDUCE';
+                text.textContent = 'Sunny Moon is the Chief Technology Officer and Director of Publicity in Northern California. She is the developer of this website and is very proud of the sunrise team for their ability to bring magic! Outside of Sunrise, Sunny is a junior at Amador Valley High School in the San Francisco Bay Area. She is a passionate STEM nerd and is a Science Olympiad kid! An avid cellist and an orchestra musician playing in San Francisco Symphony Youth Orchestra, she is also passionate about serving her community through music: she leads Tri-Valley Symphonics as the Music Director and her school Music Honor Society as its Founder. She also enjoys learning about history and social issues and dreams to use her technical skills to promote compassion in society.';
+            } else {
+                button.textContent = 'READ MORE';
+                text.textContent = 'Chief Technology Officer';
+            }
+        }
+    </script>
+
+
+</div>
+
+  <footer class="bg-[#030081] text-white px-16 py-10">
+    <h1 class="text-3xl font-bold mb-4 text-center">CONNECT WITH US</h1>
+    <div class="text-center">
+      <a href="https://www.instagram.com/sunrise.venture/">
+        <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: white"></i>
+      </a>
+      <a href="mailto:sunrise.venture.pitch@gmail.com">
+        <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: white"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
+        <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: white"></i>
+      </a>
+    </div>
+  </footer>
+  <script src=" https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
+
+</html>
