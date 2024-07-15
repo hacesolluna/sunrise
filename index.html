@@ -88,52 +88,104 @@
       <img src="mayorClap.JPG" alt="Mayor Khan" class="w-full h-auto max-w-sm mx-auto object-cover p-8 rounded" />
     </div>
   </div>
-  <!-- Put Our Mission Section Here (Radin) -->
+  <!-- Put Our Mission Section Here -->
 
   <div class="bg-[#030081]">
-    <div class="text-white px-16 py-10 flex items-center md:flex-row md:justify-around" style="flex-flow: row wrap">
-      <div class="sm:max-w-lg md:max-w-sm mb-8 md:mb-0 flex flex-col justify-center">
-        <h2 class="text-3xl font-bold mb-4 text-center">OUR MISSION</h2>
-        <p class="text-center mb-4 w-100">
+    <div class="text-white px-24 py-10 flex flex-col items-center md:flex-row md:justify-between">
+      <div class="sm:max-w-md md:max-w-lg mb-8 md:mb-0">
+        <h2 class="text-4xl font-bold mb-2 text-center" style="color:#ffffff;">OUR MISSION</h2>
+        <p class="mb-8 text-xl text-left" style="text-indent: 25px;">
           As a 501c3 tax exempt nonprofit organization, our vision is to debunk the myth that entrepreneurs are
           exclusively tech gurus and to make top-notch entrepreneurial education and networking opportunities accessible
           to all Californian HS students for free.
         </p>
-        <a href="sponsorTier.html"
-          class="text-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500 mx-auto block">
-          SUPPORT US</a>
+        <div class="flex justify-center">
+          <a href="#"
+            class="inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl hover:bg-orange-500">
+            SUPPORT US
+          </a>
       </div>
-      <div>
-        <img id="gallery-image" src="prize.png" alt="Group photo" class="rounded shadow-xl fade w-96">
+      </div>
+
+
+      <div id="default-carousel" class="relative w-full p-10 px-10" data-carousel="slide">
+          <!-- Carousel wrapper -->
+          <div class="relative h-80 overflow-hidden rounded-lg md:h-96">
+               <!-- Item 1 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="audienceClap.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 2 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="allFinalists.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 3 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="fanFav.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 4 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="finalist.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+              <!-- Item 5 -->
+              <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img src="firstRound.JPG" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+              </div>
+          </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2">
+          <button type="button" class="w-3 h-3 rounded-full mx-1" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full mx-1" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full mx-1" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full mx-1" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full mx-1" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-1/2 left-4 z-30 flex items-center justify-center h-10 w-10 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-1/2 right-4 z-30 flex items-center justify-center h-10 w-10 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+
       </div>
     </div>
   </div>
+  
 
-  <script>
-    // Array of image sources
-    const images = [
-      'prize.png',
-      'blueaudience.jpg',
-    ];
-
-    // Function to change the image
-    function changeImage() {
-      const imgElement = document.getElementById('gallery-image');
-      let currentIndex = images.indexOf(imgElement.getAttribute('data-src'));
-      currentIndex = (currentIndex + 1) % images.length;
-      imgElement.classList.remove('fade');
-      void imgElement.offsetWidth; // Trigger reflow
-      imgElement.src = images[currentIndex];
-      imgElement.setAttribute('data-src', images[currentIndex]);
-      imgElement.classList.add('fade');
-    }
-
-    // Set initial data-src attribute
-    document.getElementById('gallery-image').setAttribute('data-src', 'prize.png');
-
-    // Change image every 3 seconds
-    setInterval(changeImage, 5000);
-  </script>
+  <!-- Testimony -->
+  <div class="bg-[#ED8B28]">
+    <div class="max-w-screen-xl flex space-x-4 items-center justify-center mx-auto p-4">
+      <h2 class="text-4xl font-bold mb-2 text-center flex justify-center" style="color:#FFF9D2;">TESTIMONY</h2>
+    </div>  
+    <div class="mx-auto max-w-screen-90% px-4 pt-0 pb-8 mt-2">
+      <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 gap-4">
+        <div class="bg-yellow-200 p-4 rounded-lg text-center font-semibold flex flex-col items-center justify-center" style="color: #030081; line-height: 1.2;">
+          <p>"My partner Serena and I learned how pitches work. LIke what to include in 90 second pitch or 150 second one. We really appreciated the speaking sessions which taught us a lot about market research, IP, etc. Another remarkable thing was that it helped improve your speaking and presenting skills a lot."</p>
+          <p><span style="font-weight: normal;">-Quennie</span></p>
+        </div>
+        <div class="bg-yellow-200 p-4 rounded-lg text-center font-semibold flex flex-col items-center justify-center" style="color: #030081; line-height: 1.2;">
+          <p>"The hardest thing for us was to figure out the pain point of our customers in the beginning. We want our products to really help people. After doing some research, we finally found some intriguing points. Personally, my favorite part of the program was mentorship. This gave us the stage to talk with many entrepreneurs and get their valuable feedback. Of course, the final pitch summit was also a highlight which gave us a very special experience."</p>
+          <p><span style="font-weight: normal;">-Serena</span></p>
+        </div>
+        <div class="bg-yellow-200 p-4 rounded-lg text-center font-semibold flex flex-col items-center justify-center" style="color: #030081; line-height: 1.2;">
+          <p>"Public speaking is not my strongest trait, but preparing for this competition improved my speaking, a lot. This Sunrise Venture competition was my very first entrepreneurial experience. As a person, I feel more confident speaking more confidently. As an entrepreneur, I know how to attract people to my ideas better. My favorite part of the sunrise venture program was being at the final pitch summit. It was a great experience! I got to talk to other contestants and get to know them and their ideas. I also got to meet the judges in person."</p>
+          <p><span style="font-weight: normal;">-Warren</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Community Partners -->
   <div class="max-w-screen-xl flex space-x-4 items-center justify-center mx-auto p-4">

@@ -1,64 +1,106 @@
 <!DOCTYPE html>
-<html>
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" type="text/css" href="home.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
-    </head>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret+One|Montserrat|Encode+Sans+Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <script>
+  $(function(){
+    $("#navbar").load("navbar.html"); 
+  });
+  </script>
+
+</head>
+
 <body>
-    <div class="all">
-        <div class = "dropdown">
-            <a class="logospace">
-                <img class="logo" src="venturelogo.JPEG" width="100" 
-                height="100" align="left" position:relative>
-                <nav>
-                    <a href="index.html" class="whiteText">Home</a>
-                    <a href="prizes.html" class="whiteText">Prizes</a>
-                    <a href="1round.html" class="whiteText">1st Round</a>
-                    <a href="2round.html" class="whiteText">Summit</a>
-                    <a href="curriculum.html" class="whiteText">Programs</a>
-                    <a href="bio.html" class="whiteText">Mentors/Speakers/Judges</a>
-                    <a href="ourTeam.html" class="whiteText">Our Team</a>
-                    <a href="story.html" class="whiteText">Our Story</a>
-                    <a href="ourSponsors.html" class="whiteText">Sponsors</a>
-                    <a href="sponsorTier.html" class="whiteText">Sponsor Us</a>
-                </nav>            
-        </div>
-        <div class="hook">
-            <p class="name">Prizes</p>
-        </div>
+  
+  <div id="navbar"></div>
+   <!-- Start Hero Section here -->
+   <div class="relative h-[88vh] bg-cover bg-center" style="background-image: url('thirdPlaceWinner.JPG')">
+    <div class="absolute inset-0 bg-black opacity-25"></div>
+      <span class="block, 0.75 text-6xl sm:text-5xl md:text-6xl font-bold leading-tight text-center" style="color: #FFD001; padding: 30px; bottom: 0; position: absolute; width: 100%; background-color: rgba(3, 0, 129, 0.75);">PRIZES</span>
+  </div>
+  <!-- End Hero Section here -->
+  
+  <div class="mx-auto max-w-screen-lg p-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+      <div class="bg-yellow-200 p-6 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">First Place</h2>
+        <ul class="list-disc list-inside">
+          <li>$800 cash</li>
+          <li>$900 Rudy Chavarria consultation</li>
+          <li>$300 Justin Sanders consultation</li>
+          <li>$300 Cynthia Kirkeby consultation</li>
+          <li>Free 1-year listing on NationalStartupsDirectory.com</li>
+        </ul>
+      </div>
+      <div class="bg-yellow-200 p-6 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">Second Place</h2>
+        <ul class="list-disc list-inside">
+          <li>$600 cash</li>
+          <li>$600 Rudy Chavarria consultation</li>
+          <li>$300 Justin Sanders consultation</li>
+          <li>$250 Susan Chang consultation</li>
+          <li>Free 1-year listing on NationalStartupsDirectory.com</li>
+        </ul>
+      </div>
+      <div class="bg-yellow-200 p-6 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">Third Place</h2>
+        <ul class="list-disc list-inside">
+          <li>$400 cash</li>
+          <li>$300 Rudy Chavarria consultation</li>
+          <li>$300 Justin Sanders consultation</li>
+          <li>Free 1-year listing on NationalStartupsDirectory.com</li>
+        </ul>
+      </div>
+      <div class="bg-yellow-200 p-6 rounded-lg text-center">
+        <h2 class="text-2xl font-bold mb-4">Fan Favorite</h2>
+        <ul class="list-disc list-inside">
+          <li>$100 cash</li>
+          <li>Free 1-year listing on NationalStartupsDirectory.com</li>
+        </ul>
+      </div>
     </div>
-    <div class="prizes" width="100%">
-        <div class="points">
-            <p>&#x1F947 1st Place:</p>
-                <ul>
-                    <li>$800 Cash</li>
-                    <li>300$ Justin Sanders consultation</li>
-                    <li>900$ Rudy Chavarria consultation</li>
-                    <li>300$ Cynthia Kirkeby consultation</li>
-                    <li>Free 1-year listing on NationalStartupsDirectory.com (attract investors)</li>
-                </ul>
-            <p>&#129352 2nd Place:</p>
-                <ul>
-                    <li>$600 Cash</li>
-                    <li>300$ Justin Sanders consultation</li>
-                    <li>600$ Rudy Chavarria consultation</li>
-                    <li>250$ Susan Chang consultation</li>
-                    <li>Free 1-year listing on NationalStartupsDirectory.com</li>
-                </ul>
-            <p>&#129353 3rd Place:</p>
-                <ul>
-                    <li>$400 Cash</li>
-                    <li>300$ Justin Sanders consulatation</li>
-                    <li>300$ Rudy Chavarria consultation</li>
-                    <li>Free 1-year listing on NationalStartupsDirectory.com</li>
-                </ul> 
-            <p>Fan Favorite</p>
-                <ul>
-                    <li>$100 cash</li>
-                    <li>Free 1-year listing on NationalStartupsDirectory.com</li>
-                </ul>
-        </div>
+  </div>
+
+  <footer class="bg-[#030081] text-white px-16 py-10">
+    <h1 class="text-3xl font-bold mb-4 text-center">CONNECT WITH US</h1>
+    <div class="text-center">
+      <a href="https://www.instagram.com/sunrise.venture/">
+        <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: white"></i>
+      </a>
+      <a href="mailto:sunrise.venture.pitch@gmail.com">
+        <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: white"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
+        <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: white"></i>
+      </a>
     </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
 </body>
+
+</html>
