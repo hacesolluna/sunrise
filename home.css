@@ -640,3 +640,31 @@ li{
   clear: none;
   align-items: center;
 } 
+
+@keyframes leftFly{
+  0%{
+    opacity: 0%;
+    transform: translateX(-100%);
+  }
+  100%{
+    opacity: 100%;
+    transform: translateX(0%);
+  }
+}
+
+.animate-leftFly{
+  animation: leftFly 1.5s ease-out forwards;
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 0%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.animate-fadeIn{
+  animation: fadeIn 2.5s ease-out forwards;
+}
