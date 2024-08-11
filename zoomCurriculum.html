@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#navbar").load("navbar.html"); 
+  });
+  </script>
+</head>
+
+<body>
+  
+  <div id="navbar"></div>
+  <!-- Start Hero Section here -->
+  <div class="relative h-[88vh] bg-cover bg-center" style="background-image: url('photos/allFinalists.JPG')">
+    <div class="absolute inset-0 bg-black opacity-25"></div>
+      <span class="block, 0.75 text-6xl sm:text-5xl md:text-6xl font-bold leading-tight text-center" style="color: #FFD001; padding: 30px; bottom: 0; position: absolute; width: 100%; background-color: rgba(3, 0, 129, 0.75);">Fall Zoom Curriculum
+      </span>
+  </div>
+  <!-- End Hero Section here -->
+
+  <div class="bg-white max-w-screen-xl flex-col text-center mx-auto px-4 sm:px-6 lg:px-8" style="padding: 20px; padding-top: 30px">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdqr2neYuV7cVhgsyOkPPNz1ebX863m1CgSmPyVbeTJNZdZMw/viewform"
+      class="text-center align-center inline-block bg-orange-400 text-white font-semibold py-2 px-6 rounded-xl text-2xl hover:bg-orange-500">
+      Sign Up
+    </a>
+  </div>
+  
+  <div class="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h1 class="text-center text-4xl font-extrabold text-black mt-5">Program Calendar</h1>
+      <ol class="timeline-container relative border-s border-gray-200 dark:border-gray-700">                  
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  September 30, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">How to Turn Your Idea to a Pitch</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  October 7, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Business Model Canvas</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  October 14, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Market Research</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  October 21, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Intellectual Property Law</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  October 28, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Pitch Workshop</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  November 4, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Entrepreneurship in the Medical Industry</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  November 11, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Pitch Workshop</p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <time class="mb-1 text-sm font-normal leading-none text-blue-400 dark:text-blue">  November 18, 5-6 pm</time>
+                <p class="mb-4 text-base font-normal text-black-500 dark:text-black-400">Basics of Angel Investing</p>
+            </li>
+      </ol>
+      </div>
+
+
+  <footer class="bg-[#030081] text-white px-16 py-10">
+    <h1 class="text-3xl font-bold mb-4 text-center">CONNECT WITH US</h1>
+    <div class="text-center">
+      <a href="https://www.instagram.com/sunrise.venture/">
+        <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: white"></i>
+      </a>
+      <a href="mailto:sunrise.venture.pitch@gmail.com">
+        <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: white"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
+        <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: white"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
