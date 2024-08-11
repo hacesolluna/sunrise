@@ -641,6 +641,10 @@ li{
   align-items: center;
 } 
 
+.photo-adjust{
+  object-position: center -100px;
+}
+
 @keyframes leftFly{
   0%{
     opacity: 0%;

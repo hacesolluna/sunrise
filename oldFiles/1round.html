@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Urbanist|REM|Gruppo|Poiret One|Montserrat|Encode Sans Condensed|Poppins">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="home.css" rel="stylesheet">
+  <style>
+    .fade {
+      animation: fadeEffect 1s;
+    }
+
+    @keyframes fadeEffect {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+  $(function(){
+    $("#navbar").load("navbar.html"); 
+  });
+  </script>
+</head>
+
+<body>
+  
+  <div id="navbar"></div>
+
+  <!-- Start Hero Section here -->
+  <div class="relative h-[88vh] bg-cover bg-center" style="background-image: url('photos/firstRound.JPG')">
+    <div class="absolute inset-0 bg-black opacity-25"></div>
+      <span class="block, 0.75 text-6xl sm:text-5xl md:text-6xl font-bold leading-tight text-center" style="color: #FFD001; padding: 30px; bottom: 0; position: absolute; width: 100%; background-color: rgba(3, 0, 129, 0.75);">FIRST ROUND</span>
+  </div>
+  <!-- End Hero Section here -->
+
+  <div class="bg-white max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8" style="padding: 30px">
+    <div class="text-xl bg-orange-200 font-semibold py-2 px-6 rounded-xl">
+    <h1 class="text-3xl font-bold leading-tight" style="padding-bottom: 20px">THE RULES</h1>
+
+      <li>All California high schoolers (Grades 9-12 currently) are eligible to submit a pitch</li>
+      <li>
+        Submissions cannot be over 90 seconds
+      </li>
+        <ul>
+          <li>
+          You will be disqualified if your pitch is over 90 seconds
+          </li>
+        </ul>
+      <li>
+        Absolutely no edits, cuts, or music
+      </li>
+        <ul>
+          <li>Your video must be one take</li>
+          <li>If your video jump cuts or uses background music, you will be disqualified immediately</li>
+          <li>Exception: If you and your partner cannot film in-person together due to geographical constraints, you may stitch together your video pitch</li>
+          <ul>
+            <li>It is also acceptable that you pitch in zoom and record it</li>
+          </ul>
+        </ul>
+      <li>You must follow the rubric to receive points</li>
+        <ul>
+          <li>Any external influence or teachings will not be considered; we grade based on our rubric</li>
+        </ul>
+      <li>
+        You are no longer required to attend:
+      </li>
+      <ul>
+        <li>5/10 curriculum sessions</li>
+        <li>1 mentorship session</li>
+      </ul>
+      </div>
+
+      <br>
+      <br>
+    
+    <div class="text-xl bg-orange-200 font-semibold py-2 px-6 rounded-xl text-center">
+      <h1 class="text-3xl font-bold leading-tight" style="padding-bottom: 20px; padding-top: 20px">THE RUBRIC</h1>
+      <div style="display: flex; justify-content: center">
+        <img src="photos/rubric90pitch.png" width="550" height="700">
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="bg-[#030081] text-white px-16 py-10">
+    <h1 class="text-3xl font-bold mb-4 text-center">CONNECT WITH US</h1>
+    <div class="text-center">
+      <a href="https://www.instagram.com/sunrise.venture/">
+        <i class="fa fa-instagram" style="font-size:36px;padding-right:20px; color: white"></i>
+      </a>
+      <a href="mailto:sunrise.venture.pitch@gmail.com">
+        <i class="fa fa-envelope" style="font-size:36px;align-items: center;color: white"></i>
+      </a>
+      <a href="https://www.linkedin.com/company/sunrise-venture-inc/">
+        <i class="fa fa-linkedin-square" style="font-size:36px;padding-left: 20px;color: white"></i>
+      </a>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+</body>
+
+</html>
