@@ -1,7 +1,7 @@
 <nav class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
   <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
     <!-- Logo with link to Home page -->
-    <a href="https://www.sunriseventurepitch.org/" class="flex items-center space-x-3 rtl:space-x-reverse" target="_self">
+    <a href="https://www.sunriseventurepitch.org/" class="flex items-center space-x-3 rtl:space-x-reverse" target="_self" id="logo-link">
       <img src="photos/sunriseBlueLogo.png" class="h-8" alt="Sunrise Logo" />
       <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Sunrise Venture</span>
     </a>
@@ -25,7 +25,7 @@
         <li>
           <a href="https://www.sunriseventurepitch.org/" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">HOME</a>
         </li>
-        
+
         <!-- Upcoming Events Dropdown -->
         <li>
           <button id="dropdownNavbarLink1" data-dropdown-toggle="dropdownNavbar1"
@@ -48,7 +48,7 @@
           </div>
         </li>
 
-        <!-- Past Events Dropdown -->
+        <!-- PAST EVENTS Dropdown -->
         <li>
           <button id="dropdownNavbarLink4" data-dropdown-toggle="dropdownNavbar4"
             class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent">PAST EVENTS
@@ -146,14 +146,15 @@
   </div>
 </nav>
 
-<!-- Script to toggle the mobile menu visibility and ensure re-attachment of event listeners -->
+<!-- Add the script below -->
 <script>
+  // This ensures that the navbar toggle functionality is reattached every time the page is loaded or navigated.
   document.addEventListener('DOMContentLoaded', function() {
-    // Toggle mobile menu on click (hamburger button)
     const toggleButton = document.getElementById('navbar-toggle');
     const mobileMenu = document.getElementById('navbar-dropdown');
     
-    toggleButton.addEventListener('click', () => {
+    // If the button is clicked, toggle the mobile menu visibility
+    toggleButton.addEventListener('click', function() {
       mobileMenu.classList.toggle('hidden');
     });
   });
